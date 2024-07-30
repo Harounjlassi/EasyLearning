@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from "react";
-import Container from "react-bootstrap/Container";
+import { Container, Row, Col, Button } from "react-bootstrap";
+
 import "../../asset/css/custom.css";
 import "../../asset/css/custom.css";
+import "../../asset/css/bootstrap.min.css";
 
 class TopBanner extends Component {
   render() {
@@ -9,8 +11,18 @@ class TopBanner extends Component {
       <Fragment>
         {/* <div className="row">
         </div> */}
-        <Container className="topFixedBanner">
-          <div className="topFixedBannerOverlay"></div>
+        <Container fluid={true} className="topFixedBanner p-0">
+          <div className="topFixedBannerOverlay">
+            <Container className="topContent">
+              <Row>
+                <Col className="text-center">
+                  <h1>Easy Learning</h1>
+                  <h4>Learn Professionally</h4>
+                  <Button variant="primary">Learn More</Button>{" "}
+                </Col>
+              </Row>
+            </Container>
+          </div>
         </Container>
       </Fragment>
     );
