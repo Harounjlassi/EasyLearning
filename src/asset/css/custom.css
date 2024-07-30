@@ -1,0 +1,7 @@
+.topFixedBanner {
+  background-image: url("../image/banner.jpg");
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: cover;
+}
