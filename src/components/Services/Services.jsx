@@ -10,7 +10,9 @@ class Services extends Component {
   render() {
     return (
       <Fragment>
-        <Container className="">
+        <Container className="text-center">
+          <h1 className="ServiceMainTitle">MY SERVICES</h1>
+          <div className="bottom"></div>
           <Row>
             <Col lg={4} md={6} sm={12} className="">
               <div className="ServiceCard text-center">
