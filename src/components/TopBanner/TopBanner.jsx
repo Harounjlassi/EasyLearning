@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Container from "react-bootstrap/Container";
 import "../../asset/css/custom.css";
+import "../../asset/css/custom.css";
 
 class TopBanner extends Component {
   render() {
@@ -8,7 +9,9 @@ class TopBanner extends Component {
       <Fragment>
         {/* <div className="row">
         </div> */}
-        <Container className="topFixedBanner"></Container>
+        <Container className="topFixedBanner">
+          <div className="topFixedBannerOverlay"></div>
+        </Container>
       </Fragment>
     );
   }

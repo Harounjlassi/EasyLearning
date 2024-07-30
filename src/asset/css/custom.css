@@ -3,5 +3,12 @@
   min-height: 550px;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topFixedBannerOverlay {
+  position: absolute;
+  min-height: 550px;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.7);
 }
