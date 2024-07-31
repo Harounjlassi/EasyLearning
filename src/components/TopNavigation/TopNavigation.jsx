@@ -2,19 +2,31 @@ import React, { Component, Fragment } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import whiteLogo from "../../asset/image/logo_white.png";
+import blackLogo from "../../asset/image/logo_black.png";
+
 export class TopNavigation extends Component {
   constructor() {
     super();
     this.state = {
       navBarTitle: "navTitle ",
+      navBarLogo: [whiteLogo], //object
+      navBackBack: "navBackground",
     };
   }
   onScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({ navBarTitle: "navTitleScroll" });
+      this.setState({
+        navBarTitle: "navTitleScroll",
+        navBarLogo: [blackLogo],
+        navBackBack: "navBackgroundScrool",
+      });
     } else if (window.scrollY < 100) {
-      this.setState({ navBarTitle: "navTitle" });
+      this.setState({
+        navBarTitle: "navTitle",
+        navBarLogo: [whiteLogo],
+        navBackBack: "navBackground",
+      });
     }
   };
   componentDidMount() {
@@ -24,15 +36,15 @@ export class TopNavigation extends Component {
     return (
       <Fragment>
         <Navbar
+          className={this.state.navBackBack}
           collapseOnSelect
           fixed="top"
           expand="lg"
-          bg="dark"
-          variant="dark"
+          variant="black"
         >
           <Container>
             <Navbar.Brand className={this.state.navBarTitle} href="#home">
-              EASY LEARNING
+              <img src={this.state.navBarLogo} alt="" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

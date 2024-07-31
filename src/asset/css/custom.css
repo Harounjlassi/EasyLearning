@@ -95,3 +95,9 @@
 
   font-size: 30px;
 }
+.navBackground {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.navBackgroundScrool {
+  background-color: #ffffff;
+}
