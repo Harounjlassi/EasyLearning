@@ -55,7 +55,7 @@ export class TopNavigation extends Component {
               <Nav className="me-auto"></Nav>
               <Nav>
                 <Nav.Link className={this.state.navBarItem} href="#deets">
-                  ABOUT{" "}
+                  ABOUT
                 </Nav.Link>
                 <Nav.Link className={this.state.navBarItem} href="#deets">
                   HOME

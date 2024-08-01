@@ -123,3 +123,29 @@
   font-size: 30px;
   color: #000000 !important;
 }
+.summaryBanner {
+  background-image: url("../image/summary.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.summaryBannerOverlay {
+  position: absolute;
+  min-height: 400px;
+  width: 100%;
+  background: rgba(12, 19, 116, 0.7);
+}
+.countNumber {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.countTitle {
+  color: #e1d350;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
