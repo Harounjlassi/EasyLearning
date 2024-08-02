@@ -2,6 +2,9 @@ import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { byPrefixAndName } from "@awesome.me/kit-KIT_CODE/icons";
 
 class Summary extends Component {
   render() {
@@ -32,13 +35,14 @@ class Summary extends Component {
                   </Row>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
-                  <Card style={{ width: "18rem" }}>
+                  <Card className="workCard">
                     <Card.Body>
                       <Card.Title className="cardTitle">
                         what i have achieved
                       </Card.Title>
                       <ListGroup variant="flush">
                         <ListGroup.Item className="cardSubTitle text-justify">
+                          <FontAwesomeIcon icon={}></FontAwesomeIcon>
                           Requirement Gathering
                         </ListGroup.Item>
                         <ListGroup.Item className="cardSubTitle text-justify">
