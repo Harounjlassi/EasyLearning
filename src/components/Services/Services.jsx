@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import designIcon from "../../asset/image/design.png";
 import ecommerceIcon from "../../asset/image/ecommerce.png";
 import webIcon from "../../asset/image/web.png";

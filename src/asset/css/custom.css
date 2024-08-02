@@ -144,8 +144,23 @@
   font-size: 40px;
 }
 .countTitle {
-  color: #e1d350;
+  color: #c9b92f;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 22px;
+}
+.countSection {
+  margin-top: 20%;
+}
+.cardTitle {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.cardSubTitle {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
