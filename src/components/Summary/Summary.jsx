@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
+
 class Summary extends Component {
   render() {
     return (
@@ -32,19 +34,20 @@ class Summary extends Component {
                 <Col lg={4} md={6} sm={12}>
                   <Card style={{ width: "18rem" }}>
                     <Card.Body>
-                      <Card.Title className="cardTitle">Card Title</Card.Title>
-                      <Card.Text>
-                        <p className="cardSubTitle text-justify">
-                          Requirment Gathering
-                        </p>
-                        <p className="cardSubTitle text-justify">
+                      <Card.Title className="cardTitle">
+                        what i have achieved
+                      </Card.Title>
+                      <ListGroup variant="flush">
+                        <ListGroup.Item className="cardSubTitle text-justify">
+                          Requirement Gathering
+                        </ListGroup.Item>
+                        <ListGroup.Item className="cardSubTitle text-justify">
                           System Analysis
-                        </p>
-                        <p className="cardSubTitle text-justify">Coding Test</p>
-                        <p className="cardSubTitle text-justify">
+                        </ListGroup.Item>
+                        <ListGroup.Item className="cardSubTitle text-justify">
                           Implementation
-                        </p>
-                      </Card.Text>
+                        </ListGroup.Item>
+                      </ListGroup>
                     </Card.Body>
                   </Card>
                 </Col>
