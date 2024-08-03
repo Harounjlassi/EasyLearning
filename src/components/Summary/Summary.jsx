@@ -4,7 +4,14 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { byPrefixAndName } from "@awesome.me/kit-KIT_CODE/icons";
+
+import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 class Summary extends Component {
   render() {
@@ -17,18 +24,54 @@ class Summary extends Component {
                 <Col lg={8} md={6} sm={12}>
                   <Row className="countSection">
                     <Col>
-                      <h1 className="countNumber">3500</h1>
+                      <FontAwesomeIcon icon={faGlobe} className="iconProject" />
+                      <h1 className="countNumber">
+                        <CountUp start={0} end={3500} delay={0}>
+                          {({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                              <div>
+                                <span ref={countUpRef} />
+                              </div>
+                            </VisibilitySensor>
+                          )}
+                        </CountUp>
+                      </h1>
                       <h4 className="countTitle">Students Worldwide</h4>
                       <hr className="text-white w-25" />
                     </Col>
 
                     <Col>
-                      <h1 className="countNumber">22</h1>
+                      <FontAwesomeIcon
+                        icon={faLaptop}
+                        className="iconProject"
+                      />
+                      <h1 className="countNumber">
+                        <CountUp start={0} end={22} delay={0}>
+                          {({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                              <div>
+                                <span ref={countUpRef} />
+                              </div>
+                            </VisibilitySensor>
+                          )}
+                        </CountUp>
+                      </h1>{" "}
                       <h4 className="countTitle">Courses Published</h4>
                       <hr className="text-white w-25" />
                     </Col>
                     <Col>
-                      <h1 className="countNumber">3000</h1>
+                      <FontAwesomeIcon icon={faStar} className="iconProject" />
+                      <h1 className="countNumber">
+                        <CountUp start={0} end={3000} delay={0}>
+                          {({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                              <div>
+                                <span ref={countUpRef} />
+                              </div>
+                            </VisibilitySensor>
+                          )}
+                        </CountUp>
+                      </h1>{" "}
                       <h4 className="countTitle">Studnet Review</h4>
                       <hr className="text-white w-25" />
                     </Col>
@@ -38,17 +81,35 @@ class Summary extends Component {
                   <Card className="workCard">
                     <Card.Body>
                       <Card.Title className="cardTitle">
-                        what i have achieved
+                        what i Have achieved
                       </Card.Title>
                       <ListGroup variant="flush">
                         <ListGroup.Item className="cardSubTitle text-justify">
-                          <FontAwesomeIcon icon={}></FontAwesomeIcon>
+                          <FontAwesomeIcon
+                            icon={faSquareCheck}
+                            className="iconBullent"
+                          />
                           Requirement Gathering
                         </ListGroup.Item>
                         <ListGroup.Item className="cardSubTitle text-justify">
+                          <FontAwesomeIcon
+                            icon={faSquareCheck}
+                            className="iconBullent"
+                          />
                           System Analysis
                         </ListGroup.Item>
                         <ListGroup.Item className="cardSubTitle text-justify">
+                          <FontAwesomeIcon
+                            icon={faSquareCheck}
+                            className="iconBullent"
+                          />
+                          Coding Testing
+                        </ListGroup.Item>
+                        <ListGroup.Item className="cardSubTitle text-justify">
+                          <FontAwesomeIcon
+                            icon={faSquareCheck}
+                            className="iconBullent"
+                          />
                           Implementation
                         </ListGroup.Item>
                       </ListGroup>

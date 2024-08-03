@@ -164,10 +164,19 @@
   font-size: 14px;
 }
 .countSection {
-  margin-top: 20%;
+  padding-top: 20%;
 }
 .workCard {
   margin-top: 30%;
   padding: 10px 10px 10px 10px;
   border-radius: 3px;
+}
+.iconBullent {
+  color: #051b35;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.iconProject {
+  color: #ffffff;
+  font-size: 40px;
 }
