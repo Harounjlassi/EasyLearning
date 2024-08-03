@@ -84,28 +84,28 @@ class Summary extends Component {
                         what i Have achieved
                       </Card.Title>
                       <ListGroup variant="flush">
-                        <ListGroup.Item className="cardSubTitle text-justify">
+                        <ListGroup.Item className="cardSubTitle text-start">
                           <FontAwesomeIcon
                             icon={faSquareCheck}
                             className="iconBullent"
                           />
                           Requirement Gathering
                         </ListGroup.Item>
-                        <ListGroup.Item className="cardSubTitle text-justify">
+                        <ListGroup.Item className="cardSubTitle text-start">
                           <FontAwesomeIcon
                             icon={faSquareCheck}
                             className="iconBullent"
                           />
                           System Analysis
                         </ListGroup.Item>
-                        <ListGroup.Item className="cardSubTitle text-justify">
+                        <ListGroup.Item className="cardSubTitle text-start">
                           <FontAwesomeIcon
                             icon={faSquareCheck}
                             className="iconBullent"
                           />
                           Coding Testing
                         </ListGroup.Item>
-                        <ListGroup.Item className="cardSubTitle text-justify">
+                        <ListGroup.Item className="cardSubTitle text-start">
                           <FontAwesomeIcon
                             icon={faSquareCheck}
                             className="iconBullent"

@@ -34,7 +34,7 @@ class Analysis extends Component {
               </ResponsiveContainer>
             </Col>
             <Col lg={6} md={12} sm={12}>
-              <p className="text-justify serviceDescription">
+              <p className="text-start serviceDescription">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Provident tenetur harum modi optio earum quae veniam quo magnam
                 culpa nostrum laboriosam hic mollitia molestias magni non ullam
