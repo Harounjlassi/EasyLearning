@@ -3,6 +3,8 @@ import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faVideoSlash } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-bootstrap/Modal";
+import "../../../node_modules/video-react/dist/video-react.css"; // import css
+import { Player, BigPlayButton } from "video-react";
 
 class Video extends Component {
   constructor() {
@@ -55,10 +57,11 @@ class Video extends Component {
         </Container>
 
         <Modal size="lg" show={this.state.show} onHide={this.modalClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+            <Player src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+              <BigPlayButton position="center" />
+            </Player>
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={this.modalClose}>
               Close
